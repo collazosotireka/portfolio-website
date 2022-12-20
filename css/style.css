@@ -92,7 +92,7 @@ nav #current-page { /* Red current page ID */
   font-style: italic;
   text-decoration: underline;
 }
-.black-text { /* Change text black class */
+.black-header { /* Change header black class */
   color: #000000;
   text-decoration: none;
 }
@@ -111,7 +111,34 @@ nav #current-page { /* Red current page ID */
   font-size: 0.75em;
   color: #000000;
 }
-#next-project { /* Next project links on project pages */
+#next-project { /* Next project links on project pages ID */
   font-weight: 500;
   text-decoration: none;
+}
+#linkedin { /* LinkedIn link on contact page ID */
+  color: #000000;
+  font-weight: 300;
+  text-decoration: none;
+}
+#behance { /* Behance link on contact page ID */
+  color: #ffffff;
+  font-weight: 300;
+  text-decoration: none;
+}
+#email { /* Email link on contact page ID */
+  color: #FC221C;
+  font-weight: 300;
+  text-decoration: none;
+}
+#linkedin:visited, #behance:visited, #email:visited {
+  font-weight: 300;
+}
+#linkedin:hover, #behance:hover, #email:hover {
+  font-weight: 400;
+}
+#linkedin:focus, #behance:focus, #email:focus {
+  font-weight: 400;
+}
+#linkedin:active, #behance:active, #email:active {
+  text-decoration: underline;
 }
