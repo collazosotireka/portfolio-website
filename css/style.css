@@ -115,17 +115,18 @@ nav #current-page { /* Red current page ID */
   font-weight: 500;
   text-decoration: none;
 }
-#linkedin { /* LinkedIn link on contact page ID */
+/* Contact page links */
+#linkedin { /* LinkedIn ID */
   color: #000000;
   font-weight: 300;
   text-decoration: none;
 }
-#behance { /* Behance link on contact page ID */
+#behance { /* Behance ID */
   color: #ffffff;
   font-weight: 300;
   text-decoration: none;
 }
-#email { /* Email link on contact page ID */
+#email { /* Email ID */
   color: #FC221C;
   font-weight: 300;
   text-decoration: none;
@@ -141,4 +142,9 @@ nav #current-page { /* Red current page ID */
 }
 #linkedin:active, #behance:active, #email:active {
   text-decoration: underline;
+}
+/* Work page title links * animated when hovered over */
+.work-link {
+  font-weight: 400;
+  text-decoration: none;
 }
