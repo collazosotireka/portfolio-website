@@ -1,0 +1,117 @@
+/* Color used
+background color: #F8DFDB
+primary color: #FC221C
+secondary color: #000000
+secondary color: #FFFFFF */
+body { /* General styling */
+  background-color: #F8DFDB;
+  font-family: 'Inter Tight' , sans-serif; /* Set font to Inter */
+  font-size: 16px; /*Set font size to 16px */
+  font-weight: 300; /* Set font weight to 300 */
+  line-height: 1.6; /* Set line height to 1.6 * Font size */
+  color: #FC221C;
+}
+/* Header stylings */
+h1 , h2 , h3 , h4 , h5 , h6 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 4em;
+  font-weight: 400;
+}
+h2 {
+  font-size: 2.25em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.75em;
+  font-weight: 300;
+}
+h5 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+h6 {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+img {
+  width: 100%;
+}
+/* Main and Footer anchors */
+main a, footer a {
+  color: #FC221C;
+  font-weight: 300;
+  text-decoration: none;
+}
+main a, footer a:visited {
+  color: #FC221C;
+}
+main a, footer a:hover {
+  color: #FC221C;
+  font-weight: 400;
+}
+main a, footer a:focus {
+  color: #FC221C;
+  font-weight: 400;
+}
+main a, footer a:active {
+  color: #FC221C;
+  text-decoration: underline;
+}
+/* Main navigation styling */
+header nav a {
+  color: #000;
+  text-decoration: none;
+}
+header nav a:visited {
+  color: #000000;
+}
+header nav a:hover {
+  color: #000000;
+  font-weight: 400;
+}
+header nav a:focus {
+  color: #000000;
+  font-weight: 400;
+}
+header nav a:active {
+  color: #000000;
+  text-decoration: underline;
+}
+nav #current-page { /* Red current page ID */
+  color: #FC221C;
+  text-decoration: none;
+}
+#caselink { /* Home page All cases ID */
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: underline;
+}
+.black-text { /* Change text black class */
+  color: #000000;
+  text-decoration: none;
+}
+.italic-text { /* Change text italic class */
+  font-style: italic;
+}
+.marquee-header { /* Marquee header class */
+  font-weight: 300;
+}
+/* 14px and 12px body texts */
+.body-2 {
+  color: #000000;
+  font-size: 0.875em
+}
+.body-3 {
+  font-size: 0.75em;
+  color: #000000;
+}
+#next-project { /* Next project links on project pages */
+  font-weight: 500;
+  text-decoration: none;
+}

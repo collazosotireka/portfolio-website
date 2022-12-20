@@ -4,83 +4,70 @@
     <meta charset="utf-8">
     <meta name="author" content="Reka Collazo-Soti">
     <meta name="description" content="This is the home page of my website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reka Collazo-Soti</title>
-    <link href="img/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- For the header -->
     <header>
-      <div>
-        <nav>
-          <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="#">Contact Me</a></li>
-           <li><a href="#">Work</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <a href="index.html" id="current-page">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact Me</a>
+        <a href="#">Work</a>
+      </nav>
     </header>
-   <!-- Introduction -->
-   <div>
+    <!-- For the main -->
+    <main>
       <h1>Hello!</h1>
-      <h4>I’m Réka Collazo-Sóti a Product Designer specialized in UX & UI Design</h4>
+      <h4>I’m Réka Collazo-Sóti a <span class="italic-text">Product Designer</span> specialized in <span class="italic-text">UX & UI Design</span></h4>
       <!-- Scrolling Arrow -->
       <div>
         <span>SCROLL</span>
       </div>
-    </div>
-    <!-- For my works -->
-    <div>
-      <h2>Selected Works</h2>
+      <!-- For my works -->
+      <p>SELECTED WORKS</p>
       <!-- the. moneyapp section -->
-      <div>
-        <picture>
-          <source srcset="img/moneyapp/indexphoto@1x.jpg" media="(max-width:767px)">
-          <img src="img/moneyapp/indexphoto@2x.jpg" alt="Index Photo">
-        </picture>
+      <picture>
+        <source srcset="img/moneyapp/indexphoto@1x.jpg" media="(max-width:767px)">
+        <img src="img/moneyapp/indexphoto@2x.jpg" alt="Index Photo">
+      </picture>
+      <h2 class="marquee-header">the. moneyapp</h2> <!-- Marquee text -->
+      <div> <!-- Two Columns in 1 row -->
         <div>
-          <span>the. moneyapp the.moneyapp the. moneyapp</span>
+          <p class="black-text">Fintech Mobile App Design</p>
         </div>
-        <div> <!-- Two Columns in 1 row -->
-         <div>
-           <p>Fintech Mobile App Design</p>
-         </div>
-         <div>
+        <div>
           <a href="moneyapp.html">CHECK FULL CASE HERE</a>
-         </div>
         </div>
       </div>
       <!-- NightLifer section -->
-      <div>
-        <picture>
-          <source srcset="img/nightlifer/indexphoto@1x.jpg" media="(max-width:767px)">
-          <img src="img/nightlifer/indexphoto@2x.jpg" alt="Index Photo">
-        </picture>
+      <picture>
+        <source srcset="img/nightlifer/indexphoto@1x.jpg" media="(max-width:767px)">
+        <img src="img/nightlifer/indexphoto@2x.jpg" alt="Index Photo">
+      </picture>
+      <h2 class="marquee-header">NightLifer</h2> <!-- Marquee text -->
+      <div> <!-- Two Columns in 1 row -->
         <div>
-          <span>NightLifer NightLifer NightLifer</span>
+          <p class="black-text">Responsive Web App Design</p>
         </div>
-        <div> <!-- Two Columns in 1 row -->
-         <div>
-           <p>Responsive Web App Design</p>
-         </div>
-         <div>
+        <div>
           <a href="nightlifer.html">CHECK FULL CASE HERE</a>
-         </div>
         </div>
-       </div>
-       <div>
-        <nav>
-          <a href="#">+ALL CASES HERE</a>
-        </nav>
       </div>
-    </div>
+      <nav>
+        <h6><a href="#" id="caselink">+ALL CASES HERE</a></h6>
+      </nav>
+    </main>
     <!-- For the footer -->
     <footer>
-      <h3>Let's Create Something Together!</h3>
+      <h3>Let's create <span class="black-text">something</span> together!</h3> <!-- Add animated arrow -->
       <nav>
-        <a href="https://www.behance.net/collazosotireka">Behance</a>
-        <a href="mailto:collazosotireka@gmail.com">Mail</a>
+        <a href="https://www.behance.net/collazosotireka">Behance /</a>
+        <a href="mailto:collazosotireka@gmail.com">Mail /</a>
         <a href="https://www.linkedin.com/in/rekacollazosoti/">LinkedIn</a>
       </nav>
       <p>Copyright Reka Collazo-Soti 2022</p>

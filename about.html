@@ -2,48 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="author" content="Reka Collazo-Soti">
-    <meta name="description" content="This is the home page of my website">
-    <title>About Reka Collazo-Soti</title>
-    <link href="img/favicon.ico" rel="shortcut icon">
+    <meta name="author" content="About Reka Collazo-Soti">
+    <meta name="description" content="This is the about page of my website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reka Collazo-Soti</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- For the header -->
     <header>
-      <div>
-        <nav>
-          <ul>
-           <li><a href="index.html">Home</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="#">Contact Me</a></li>
-           <li><a href="#">Work</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html"id="current-page">About</a>
+        <a href="#">Contact Me</a>
+        <a href="#">Work</a>
+      </nav>
     </header>
-    <!-- For the introduction -->
-    <div>
+    <!-- For the main -->
+    <main>
       <h1>Hi There!</h1>
       <h6>I was born and raised in Hungary and currently reside in the United States. I graduated as a UI Designer in 2022 and have a passion for creating visual designs with user-first experience.</h6>
-    </div>
-    <!-- For the Image -->
-    <div>
-      <div>
-        <nav>
-          <a href="#">RESUME</a>
-        </nav>
-      </div>
+      <!-- For the Image -->
+      <nav>
+        <a href="#" class="black-text">RESUME</a> <!-- It will be an animated round text -->
+      </nav>
       <picture>
         <source srcset="img/profile/profilepicture@1x.jpg" media="(max-width:767px)">
         <img src="img/profile/profilepicture@2x.jpg" alt="Index Photo">
       </picture>
-    </div>
+    </main>
     <!-- For the footer -->
     <footer>
-      <h3>Let's Create Something Together!</h3>
+      <h3>Let's create <span class="black-text">something</span> together!</h3> <!-- Add animated arrow -->
       <nav>
-        <a href="https://www.behance.net/collazosotireka">Behance</a>
-        <a href="mailto:collazosotireka@gmail.com">Mail</a>
+        <a href="https://www.behance.net/collazosotireka">Behance /</a>
+        <a href="mailto:collazosotireka@gmail.com">Mail /</a>
         <a href="https://www.linkedin.com/in/rekacollazosoti/">LinkedIn</a>
       </nav>
       <p>Copyright Reka Collazo-Soti 2022</p>
