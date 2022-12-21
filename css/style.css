@@ -1,6 +1,6 @@
 /* Color used
 background color: #F8DFDB
-primary color: #FC221C
+primary color: #C9140F
 secondary color: #000000
 secondary color: #FFFFFF */
 body { /* General styling */
@@ -9,7 +9,7 @@ body { /* General styling */
   font-size: 16px; /*Set font size to 16px */
   font-weight: 300; /* Set font weight to 300 */
   line-height: 1.6; /* Set line height to 1.6 * Font size */
-  color: #FC221C;
+  color: #C9140F;
 }
 /* Header stylings */
 h1 , h2 , h3 , h4 , h5 , h6 {
@@ -44,23 +44,23 @@ img {
 }
 /* Main and Footer anchors */
 main a, footer a {
-  color: #FC221C;
+  color: #C9140F;
   font-weight: 300;
   text-decoration: none;
 }
 main a, footer a:visited {
-  color: #FC221C;
+  color: #C9140F;
 }
 main a, footer a:hover {
-  color: #FC221C;
+  color: #C9140F;
   font-weight: 400;
 }
 main a, footer a:focus {
-  color: #FC221C;
+  color: #C9140F;
   font-weight: 400;
 }
 main a, footer a:active {
-  color: #FC221C;
+  color: #C9140F;
   text-decoration: underline;
 }
 /* Main navigation styling */
@@ -84,7 +84,7 @@ header nav a:active {
   text-decoration: underline;
 }
 nav #current-page { /* Red current page ID */
-  color: #FC221C;
+  color: #C9140F;
   text-decoration: none;
 }
 #caselink { /* Home page All cases ID */
@@ -127,7 +127,7 @@ nav #current-page { /* Red current page ID */
   text-decoration: none;
 }
 #email { /* Email ID */
-  color: #FC221C;
+  color: #C9140F;
   font-weight: 300;
   text-decoration: none;
 }
