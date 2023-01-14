@@ -12,36 +12,42 @@
   </head>
   <body>
     <!-- For the header -->
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html" id="current-page">About</a>
-        <a href="contact.html">Contact Me</a>
-        <a href="work.html">Work</a>
-      </nav>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" id="current-page">About</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="work.html">Work</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- For the main -->
-    <main>
-      <h1>Hi There!</h1>
-      <h6>I was born and raised in Hungary and currently reside in the United States. I graduated as a UI Designer in 2022 and have a passion for creating visual designs with user-first experience.</h6>
+    <main id="main-about">
+      <div class="container"> <!-- Hero -->
+        <h1>Hi There!</h1>
+        <h6>I was born and raised in Hungary and currently reside in the United States. I graduated as a UI Designer in 2022 and have a passion for creating visual designs with user-first experience.</h6>
+      </div>
       <!-- For the Image -->
-      <nav>
+      <div class="container">
         <a href="#" class="black-header">RESUME</a> <!-- It will be an animated round text -->
-      </nav>
-      <picture>
-        <source srcset="img/profile/profilepicture@1x.jpg" media="(max-width:767px)">
-        <img src="img/profile/profilepicture@2x.jpg" alt="Index Photo">
-      </picture>
+        <picture>
+          <source srcset="img/profile/profilepicture@1x.jpg" media="(max-width:767px)">
+          <img src="img/profile/profilepicture@2x.jpg" alt="Index Photo">
+        </picture>
+      </div>
     </main>
     <!-- For the footer -->
-    <footer>
-      <h3>Let's create <span class="black-text">something</span> together!</h3> <!-- Add animated arrow -->
-      <nav>
+    <footer id="footer">
+      <div class="container">
+        <h3>Let's create <span class="black-text">something</span> together!</h3> <!-- Add animated arrow -->
         <a href="https://www.behance.net/collazosotireka">Behance /</a>
         <a href="mailto:collazosotireka@gmail.com">Mail /</a>
         <a href="https://www.linkedin.com/in/rekacollazosoti/">LinkedIn</a>
-      </nav>
-      <p>Copyright Reka Collazo-Soti 2022</p>
+        <p>Copyright Reka Collazo-Soti 2022</p>
+      </div>
     </footer>
   </body>
 </html>

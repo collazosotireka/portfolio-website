@@ -24,7 +24,6 @@ h1 {
   font-size: 4em;
   font-weight: 400;
   text-align: left;
-  margin: 32px 0;
 }
 h2 {
   font-size: 2.25em;
@@ -108,6 +107,8 @@ nav #current-page { /* Red current page ID */
 }
 .marquee-header { /* Marquee header class */
   font-weight: 300;
+  margin-top: 16px;
+  margin-bottom: 32px;
 }
 /* 14px and 12px body texts */
 .body-2 {
@@ -155,20 +156,51 @@ nav #current-page { /* Red current page ID */
   font-weight: 400;
   text-decoration: none;
 }
+.full-case {
+  text-decoration: none;
+  font-weight: 300;
+}
 /* Layout Styling */
 .container {
   padding: 0 20px;
 }
-.row {
+.row { /* Two columns in one row */
   margin: 16px 0;
 }
-#main h4 {
+#main h4 { /* Introduction on Index page */
   text-align: left;
-  margin: 32px 0;
+  margin-top: 32px;
+  margin-bottom: 136px;
 }
-#selected-works {
+#selected-works { /* Title on index */
   text-align: center;
 }
-#scroll {
-  transform: rotate(-90deg);
+#main h6 { /* All cases on Index */
+  text-align: center;
+  margin-top: 108px;
+  margin-bottom: 32px;
+}
+#main h1 { /* Header on Index */
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+#header nav { /* Nav layout starts */
+  padding: 0 15px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a { /* Nav layout ends */
+  padding: 0 15px;
+}
+#main-about h6 { /* Introduction on About */
+  text-align: left;
+}
+picture {
+  margin-top: 32px;
+  margin-bottom: 16px;
 }
