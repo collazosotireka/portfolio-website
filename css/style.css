@@ -12,12 +12,19 @@ body { /* General styling */
   color: #C9140F;
 }
 /* Header stylings */
+header {
+  background-color: #F8DFDB;
+  padding: 10px;
+  margin: 10px;
+}
 h1 , h2 , h3 , h4 , h5 , h6 {
   line-height: 1.4;
 }
 h1 {
   font-size: 4em;
   font-weight: 400;
+  text-align: left;
+  margin: 32px 0;
 }
 h2 {
   font-size: 2.25em;
@@ -147,4 +154,21 @@ nav #current-page { /* Red current page ID */
 .work-link {
   font-weight: 400;
   text-decoration: none;
+}
+/* Layout Styling */
+.container {
+  padding: 0 20px;
+}
+.row {
+  margin: 16px 0;
+}
+#main h4 {
+  text-align: left;
+  margin: 32px 0;
+}
+#selected-works {
+  text-align: center;
+}
+#scroll {
+  transform: rotate(-90deg);
 }

@@ -12,65 +12,68 @@
   </head>
   <body>
     <!-- For the header -->
-    <header>
-      <nav>
-        <a href="index.html" id="current-page">Home</a>
-        <a href="about.html">About</a>
-        <a href="#">Contact Me</a>
-        <a href="#">Work</a>
-      </nav>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <a href="index.html" id="current-page">Home</a>
+          <a href="about.html">About</a>
+          <a href="#">Contact Me</a>
+          <a href="#">Work</a>
+        </nav>
+      </div>
     </header>
     <!-- For the main -->
-    <main>
-      <h1>Hello!</h1>
-      <h4>I’m Réka Collazo-Sóti a <span class="italic-text">Product Designer</span> specialized in <span class="italic-text">UX & UI Design</span></h4>
-      <!-- Scrolling Arrow -->
-      <div>
-        <span>SCROLL</span>
-      </div>
-      <!-- For my works -->
-      <p>SELECTED WORKS</p>
-      <!-- the. moneyapp section -->
-      <picture>
-        <source srcset="img/moneyapp/indexphoto@1x.jpg" media="(max-width:767px)">
-        <img src="img/moneyapp/indexphoto@2x.jpg" alt="Index Photo">
-      </picture>
-      <h2 class="marquee-header">the. moneyapp</h2> <!-- Marquee text -->
-      <div> <!-- Two Columns in 1 row -->
-        <div>
-          <p class="black-text">Fintech Mobile App Design</p>
-        </div>
-        <div>
-          <a href="moneyapp.html">CHECK FULL CASE HERE</a>
+    <main id="main">
+      <div class="container"> <!-- Hero -->
+        <h1>Hello!</h1>
+        <h4>I’m Réka Collazo-Sóti a <span class="italic-text">Product Designer</span> specialized in <span class="italic-text">UX & UI Design</span></h4>
+        <!-- Scrolling Arrow -->
+        <div id="scroll">
+          <span>SCROLL</span> <!-- Rotate and add arrow -->
         </div>
       </div>
-      <!-- NightLifer section -->
-      <picture>
-        <source srcset="img/nightlifer/indexphoto@1x.jpg" media="(max-width:767px)">
-        <img src="img/nightlifer/indexphoto@2x.jpg" alt="Index Photo">
-      </picture>
-      <h2 class="marquee-header">NightLifer</h2> <!-- Marquee text -->
-      <div> <!-- Two Columns in 1 row -->
-        <div>
-          <p class="black-text">Responsive Web App Design</p>
+      <div class="container"> <!-- For my works -->
+        <p id="selected-works">SELECTED WORKS</p>
+        <!-- the. moneyapp section -->
+        <picture>
+          <source srcset="img/moneyapp/indexphoto@1x.jpg" media="(max-width:767px)">
+          <img src="img/moneyapp/indexphoto@2x.jpg" alt="Index Photo">
+        </picture>
+        <h2 class="marquee-header">the. moneyapp</h2> <!-- Marquee text -->
+        <div class="row"> <!-- Two Columns in 1 row -->
+          <div>
+            <p class="black-header">Fintech Mobile App Design</p>
+          </div>
+          <div>
+            <a href="moneyapp.html">CHECK FULL CASE HERE</a>
+          </div>
         </div>
-        <div>
-          <a href="nightlifer.html">CHECK FULL CASE HERE</a>
+        <!-- NightLifer section -->
+        <picture>
+          <source srcset="img/nightlifer/indexphoto@1x.jpg" media="(max-width:767px)">
+          <img src="img/nightlifer/indexphoto@2x.jpg" alt="Index Photo">
+        </picture>
+        <h2 class="marquee-header">NightLifer</h2> <!-- Marquee text -->
+        <div class="row"> <!-- Two Columns in 1 row -->
+          <div>
+            <p class="black-header">Responsive Web App Design</p>
+          </div>
+          <div>
+            <a href="nightlifer.html">CHECK FULL CASE HERE</a>
+          </div>
         </div>
-      </div>
-      <nav>
         <h6><a href="#" id="caselink">+ALL CASES HERE</a></h6>
-      </nav>
+      </div>
     </main>
     <!-- For the footer -->
-    <footer>
-      <h3>Let's create <span class="black-header">something</span> together!</h3> <!-- Add animated arrow -->
-      <nav>
+    <footer id="footer">
+      <div class="container">
+        <h3>Let's create <span class="black-header">something</span> together!</h3> <!-- Add animated arrow -->
         <a href="https://www.behance.net/collazosotireka">Behance /</a>
         <a href="mailto:collazosotireka@gmail.com">Mail /</a>
         <a href="https://www.linkedin.com/in/rekacollazosoti/">LinkedIn</a>
-      </nav>
-      <p>Copyright Reka Collazo-Soti 2022</p>
+        <p>Copyright Reka Collazo-Soti 2022</p>
+      </div>
     </footer>
   </body>
 </html>
