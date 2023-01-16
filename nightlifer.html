@@ -12,13 +12,16 @@
   </head>
   <body>
     <!-- For the header -->
-    <header>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact Me</a>
-        <a href="work.html">Work</a>
-      </nav>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="index.html" id="current-page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <!-- For the 1st section -->
@@ -26,13 +29,19 @@
         <source srcset="img/nightlifer/nightlifercover@1x.jpg" media="(max-width:767px)">
         <img src="img/nightlifer/nightlifercover@2x.jpg" alt="Cover Photo">
       </picture>
-      <h2>NightLifer NightLifer NightLifer</h2>
-      <div> <!-- Open 2 columns in one row -->
+      <div class="marquee">
         <div>
+          <span>NightLifer</span>
+          <span>NightLifer</span>
+          <span>NightLifer</span>
+        </div>
+      </div>
+      <div> <!-- Open 2 columns in one row -->
+        <div id="col-md-6">
           <p>RESPONSIVE WEB APP</p>
           <p>UI DESIGN UX WRITING</p>
         </div>
-        <div>
+        <div id="col-md-6">
           <p class="body-3">NightLifer is a UI Case Study about a responsive web app, which focuses on location-based recommendations in the nightlife scene. The mission of the product is to help users navigate through a location’s nightlife, find information about businesses, and build a trusted community with reviews.</p>
         </div>
       </div> <!-- End 2 columns in one row -->

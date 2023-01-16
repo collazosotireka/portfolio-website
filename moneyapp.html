@@ -16,10 +16,9 @@
       <div class="container">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" id="current-page">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="work.html">Work</a></li>
+            <li><a href="#">Contact Me</a></li>
           </ul>
         </nav>
       </div>
@@ -32,13 +31,19 @@
           <source srcset="img/moneyapp/moneyappcover@1x.jpg" media="(max-width:767px)">
           <img src="img/moneyapp/moneyappcover@2x.jpg" alt="Cover Photo">
         </picture>
-        <h2 class="marquee-header">the. moneyapp</h2> <!-- Marquee text -->
-        <div class="row"> <!-- Open 2 columns in one row -->
+        <div class="marquee">
           <div>
+            <span>the. moneyapp</span>
+            <span>the. moneyapp</span>
+            <span>the. moneyapp</span>
+          </div>
+        </div>
+        <div class="row"> <!-- Open 2 columns in one row -->
+          <div id="col-md-6">
             <p>FINTECH MOBILE APP</p>
             <p>UI DESIGN UX WRITING</p>
           </div>
-          <div>
+          <div id="col-md-6">
             <p class="body-3">the. moneyapp was created as a UI Design Case Study. This is a finance mobile app, which focuses on creating saving goals, tracking spendings, and effective budgeting.</p>
           </div>
         </div> <!-- End 2 columns in one row -->

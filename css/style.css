@@ -98,17 +98,21 @@ nav #current-page { /* Red current page ID */
   font-style: italic;
   text-decoration: underline;
 }
+#caselink:hover {
+  animation:  shake 0.8s  ;
+}
+@keyframes shake{
+  0% {transform: translateX(0)}
+  25%{transform: translateX(25px);}
+  50%{transform: translateX(-25px);}
+  100%{transform: translateX(0px);}
+}
 .black-header { /* Change header black class */
   color: #000000;
   text-decoration: none;
 }
 .italic-text { /* Change text italic class */
   font-style: italic;
-}
-.marquee-header { /* Marquee header class */
-  font-weight: 300;
-  margin-top: 16px;
-  margin-bottom: 32px;
 }
 /* 14px and 12px body texts */
 .body-2 {
@@ -159,13 +163,20 @@ nav #current-page { /* Red current page ID */
 .full-case {
   text-decoration: none;
   font-weight: 300;
+  text-align: right;
+  text-transform: uppercase;
 }
 /* Layout Styling */
 .container {
   padding: 0 20px;
 }
-.row { /* Two columns in one row */
-  margin: 16px 0;
+.row {
+  padding: 16px 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 #main h4 { /* Introduction on Index page */
   text-align: left;
@@ -181,11 +192,11 @@ nav #current-page { /* Red current page ID */
   margin-bottom: 32px;
 }
 #main h1 { /* Header on Index */
-  margin-top: 32px;
+  margin-top: 8px;
   margin-bottom: 32px;
 }
 #header nav { /* Nav layout starts */
-  padding: 0 15px;
+  padding: 8px;
 }
 nav > ul {
   list-style-type: none;
@@ -195,7 +206,7 @@ nav > ul > li {
   display: inline-block;
 }
 nav > ul > li > a { /* Nav layout ends */
-  padding: 0 15px;
+  padding: 0 8px;
 }
 #main-about h6 { /* Introduction on About */
   text-align: left;
@@ -203,4 +214,111 @@ nav > ul > li > a { /* Nav layout ends */
 picture {
   margin-top: 32px;
   margin-bottom: 16px;
+}
+/* Marquee text starts */
+.marquee {
+  font-size: 2.25em;
+  font-weight: 300;
+  height: 64px;
+  width: 736px;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+}
+.marquee div {
+  display: inline-flex;
+  width: 200%;
+  height: 64px;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 15s linear infinite;
+}
+.marquee span {
+  float: right;
+  width: 50%;
+}
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+/* Marquee text ends */
+#col-md-6 {
+  width: 50%;
+  float: left;
+}
+.arrow {
+  width: 97px;
+}
+.line {
+  margin-top: 2px;
+  width: 97px;
+  background: #C9140F;
+  height: 2px;
+  float: left;
+}
+.point {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid #C9140F;
+  float: right;
+}
+.scroll-pulse {
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.2); }
+}
+.arrow-index {
+  animation: 2s color-change infinite alternate linear;
+}
+@keyframes color-change {
+  from {fill: #C9140F;}
+  to {fill: #F8DFDB;}
+}
+#main img {
+  width: 350px;
+  height: 443px;
+  margin: auto 16px;
+}
+#footer-about img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  margin: auto 32px;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 18px;
+  }
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 22px;
+  }
 }
