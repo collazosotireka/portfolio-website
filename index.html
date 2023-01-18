@@ -9,18 +9,22 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/be0ea0d13d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- For the header -->
     <header id="header">
       <div class="container">
-        <nav>
-          <ul>
-            <li><a href="index.html" id="current-page">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact Me</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <nav>
+            <ul>
+              <li><a href="index.html" id="current-page">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#" onclick="menuToggle()">Contact Me</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <!-- For the main -->
@@ -99,6 +103,7 @@
         <p>Copyright Reka Collazo-Soti 2022</p>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
