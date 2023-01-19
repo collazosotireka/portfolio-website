@@ -13,9 +13,11 @@ body { /* General styling */
 }
 /* Header stylings */
 header {
-  background-color: #F8DFDB;
   padding: 10px;
   margin: 10px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
 }
 h1 , h2 , h3 , h4 , h5 , h6 {
   line-height: 1.4;
@@ -27,7 +29,7 @@ h1 {
 }
 h2 {
   font-size: 2.25em;
-  font-weight: 400;
+  font-weight: 300;
 }
 h3 {
   font-size: 2em;
@@ -45,6 +47,7 @@ h6 {
   font-size: 1.25em;
   font-weight: 300;
 }
+/* Image stylings */
 img {
   width: 100%;
 }
@@ -68,6 +71,15 @@ main a, footer a:focus {
 main a, footer a:active {
   color: #C9140F;
   text-decoration: underline;
+}
+#footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+#copyright {
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 32px;
 }
 /* Main navigation styling */
 header nav a {
@@ -93,7 +105,53 @@ nav #current-page { /* Red current page ID */
   color: #C9140F;
   text-decoration: none;
 }
-#caselink { /* Home page All cases ID */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a { /* Nav layout ends */
+  padding: 0 20px;
+  text-transform: uppercase;
+  font-size: 0.8em
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #F8DFDB;
+  border-top: 1px solid #FFFFFF;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+/* Home page All cases ID */
+#main h6 { /* All cases on Index */
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 120px;
+}
+#caselink {
   font-weight: 500;
   font-style: italic;
   text-decoration: underline;
@@ -107,6 +165,7 @@ nav #current-page { /* Red current page ID */
   50%{transform: translateX(-25px);}
   100%{transform: translateX(0px);}
 }
+/* Text stylings */
 .black-header { /* Change header black class */
   color: #000000;
   text-decoration: none;
@@ -123,7 +182,14 @@ nav #current-page { /* Red current page ID */
   font-size: 0.75em;
   color: #000000;
 }
-#next-project { /* Next project links on project pages ID */
+.full-case {
+  text-decoration: none;
+  font-weight: 300;
+  text-align: right;
+  text-transform: uppercase;
+}
+/* Project page links */
+#next-project {
   font-weight: 500;
   text-decoration: none;
 }
@@ -155,17 +221,6 @@ nav #current-page { /* Red current page ID */
 #linkedin:active, #behance:active, #email:active {
   text-decoration: underline;
 }
-/* Work page title links * animated when hovered over */
-.work-link {
-  font-weight: 400;
-  text-decoration: none;
-}
-.full-case {
-  text-decoration: none;
-  font-weight: 300;
-  text-align: right;
-  text-transform: uppercase;
-}
 /* Layout Styling */
 .container {
   padding: 0 20px;
@@ -181,7 +236,7 @@ nav #current-page { /* Red current page ID */
 #main h4 { /* Introduction on Index page */
   text-align: left;
   margin-top: 32px;
-  margin-bottom: 136px;
+  margin-bottom: 64px;
 }
 #selected-works { /* Title on index */
   text-align: center;
@@ -198,51 +253,14 @@ nav #current-page { /* Red current page ID */
 #header nav { /* Nav layout starts */
   padding: 8px;
 }
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav > ul > li > a { /* Nav layout ends */
-  padding: 0 8px;
-}
 #main-about h6 { /* Introduction on About */
   text-align: left;
 }
-picture {
-  margin-top: 32px;
-  margin-bottom: 16px;
-}
-/* Marquee text starts */
-.marquee {
-  font-size: 2.25em;
-  font-weight: 300;
-  height: 64px;
-  width: 736px;
-  max-width: 1200px;
-  overflow: hidden;
-  position: relative;
-}
-.marquee div {
-  display: inline-flex;
-  width: 200%;
-  height: 64px;
-  position: absolute;
-  overflow: hidden;
-  animation: marquee 15s linear infinite;
-}
-.marquee span {
-  float: right;
-  width: 50%;
-}
-@keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-/* Marquee text ends */
-#col-md-6 {
+.col-md-6 {
   width: 50%;
   float: left;
 }
+/* Index page arrow */
 .arrow {
   width: 97px;
 }
@@ -261,13 +279,6 @@ picture {
   border-left: 30px solid #C9140F;
   float: right;
 }
-.scroll-pulse {
-  animation: pulse 1s infinite ease-in-out alternate;
-}
-@keyframes pulse {
-  from { transform: scale(0.8); }
-  to { transform: scale(1.2); }
-}
 .arrow-index {
   animation: 2s color-change infinite alternate linear;
 }
@@ -275,42 +286,16 @@ picture {
   from {fill: #C9140F;}
   to {fill: #F8DFDB;}
 }
-#main img {
-  width: 350px;
-  height: 443px;
-  margin: auto 16px;
+#svgelem {
+  margin-bottom: 64px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
 }
-#footer-about img {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  margin: auto 32px;
-}
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
-.navtoggle.responsive li  {
-  display: block;
-}
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid #000000;
-}
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+#hero {
+  background-color: inherit;
+  padding-top: 168px;
+  position: static;
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -322,6 +307,13 @@ Medium devices (640px and larger)
   .col-md-6 {
     width: 50%;
     float: left;
+  }
+  #hero {
+    max-width: 600px;
+  }
+  header {
+    text-align: right;
+    background-color: #F8DFDB;
   }
   nav > ul > li {
     display: inline-block;
@@ -340,10 +332,25 @@ Large devices (1024px or larger)
   body {
     font-size: 20px;
   }
-  .container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  #hero {
+    max-width: 600px;
+  }
+  header {
+    text-align: right;
+    background-color: #F8DFDB;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
   }
 }
 /* ==============================
